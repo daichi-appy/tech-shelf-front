@@ -1,20 +1,20 @@
 function Header() {
   return (
-      <header className="bg-white bg-opacity-80 p-4 shadow-md backdrop-blur-md">
-          <div className="container mx-auto flex justify-between items-center">
-              <div className="text-gray-900 font-bold text-2xl">
-                  Tech Shelf
+      <header className="bg-white shadow-md">
+          <div className="container mx-auto px-4 py-2 flex justify-between items-center">
+              <div className="text-gray-900 font-bold text-xl">
+                  TechShelf
               </div>
               <nav>
                   <ul className="flex space-x-4">
                       <li>
-                          <a href="#" className="text-gray-700 hover:text-gray-900 hover:underline">ログイン</a>
+                          <a href="#" className="text-gray-600 hover:text-gray-800">テック</a>
                       </li>
                       <li>
-                          <a href="#" className="text-gray-700 hover:text-gray-900 hover:underline">新規登録</a>
+                          <a href="#" className="text-gray-600 hover:text-gray-800">ブック</a>
                       </li>
                       <li>
-                          <a href="#" className="text-gray-700 hover:text-gray-900 hover:underline">ログアウト</a>
+                          <a href="#" className="text-gray-600 hover:text-gray-800">ログイン</a>
                       </li>
                   </ul>
               </nav>
