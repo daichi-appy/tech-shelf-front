@@ -1,9 +1,8 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {}
-
 // next.config.js
+const path = require('path');
 
-nextConfig = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   images: {
     remotePatterns: [
       {
@@ -14,10 +13,11 @@ nextConfig = {
       },
     ],
   },
-  webpack: config => {
+  webpack: (config) => {
     config.resolve.alias["@"] = path.resolve(__dirname, "src");
+    config.resolve.alias["~"] = path.join(__dirname, "src");
     return config;
   },
 };
 
-module.exports = nextConfig
+module.exports = nextConfig;
