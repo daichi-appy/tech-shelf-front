@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import { BookItem } from '@/app/types/books';
+import { BookItem } from '@/types/books';
 import BookSearchForm from '@/components/BookSearchForm';
 import Image from 'next/image';
 
