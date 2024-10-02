@@ -3,23 +3,23 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { useEffect } from 'react';
 
-export async function getCSRFToken(){
-  const res = await fetch('http://localhost:8080/csrf', {
-    method: 'GET',
-    credentials: 'include'
-  })
-  if (!res.ok) {
-    // This will activate the closest `error.js` Error Boundary
-    throw new Error('Failed to fetch data')
-  }
- 
-  return res.json()
-}
-
 export default function Page() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [csrfToken, setCSRFToken] = useState('');
+
+  async function getCSRFToken(){
+    const res = await fetch('http://localhost:8080/csrf', {
+      method: 'GET',
+      credentials: 'include'
+    })
+    if (!res.ok) {
+      // This will activate the closest `error.js` Error Boundary
+      throw new Error('Failed to fetch data')
+    }
+   
+    return res.json()
+  }
 
   useEffect(() => {
     getCSRFToken().then((res) => {
