@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { BookItem } from '@/app/types/books';
-import BookSearchForm from '@/app/components/BookSearchForm';
+import BookSearchForm from '@/components/BookSearchForm';
 import Image from 'next/image';
 
 export default function BookResults() {

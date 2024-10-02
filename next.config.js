@@ -3,7 +3,7 @@ const nextConfig = {}
 
 // next.config.js
 
-module.exports = {
+nextConfig = {
   images: {
     remotePatterns: [
       {
@@ -14,5 +14,10 @@ module.exports = {
       },
     ],
   },
+  webpack: config => {
+    config.resolve.alias["@"] = path.resolve(__dirname, "src");
+    return config;
+  },
 };
 
+module.exports = nextConfig

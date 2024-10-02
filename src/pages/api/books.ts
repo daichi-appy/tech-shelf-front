@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import { BookApiResponse } from '@/app/types/books';
+import { BookApiResponse } from '@/types/books';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   const { search } = req.query;

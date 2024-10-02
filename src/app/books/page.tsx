@@ -1,4 +1,4 @@
-import BookResults from '@/app/components/BookResults';
+import BookResults from '@/components/BookResults';
 
 export default function Page() {
   return (
