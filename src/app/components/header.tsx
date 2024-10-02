@@ -10,24 +10,26 @@ function Header() {
               </div>
             </Link>
               <nav>
-                  <ul className="flex space-x-4">
-                      <li>
-                          <a href="#" className="text-gray-600 hover:text-gray-800">テック</a>
-                      </li>
-                      <li>
-                          <a href="#" className="text-gray-600 hover:text-gray-800">ブック</a>
-                      </li>
-                      <li>
-                        <Link href="/login">
-                          ログイン
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/signin">
-                          新規登録
-                        </Link>
-                      </li>
-                  </ul>
+                <ul className="flex space-x-4">
+                  <li>
+                      <a href="#" className="text-gray-600 hover:text-gray-800">テック</a>
+                  </li>
+                  <li>
+                    <Link href="/books">
+                      ブック
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/login">
+                      ログイン
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/signin">
+                      新規登録
+                    </Link>
+                  </li>
+                </ul>
               </nav>
           </div>
       </header>
