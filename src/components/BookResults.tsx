@@ -3,6 +3,8 @@ import { useState } from 'react';
 import { BookItem } from '@/types/books';
 import BookSearchForm from '@/components/BookSearchForm';
 import Image from 'next/image';
+import LoadingDots from '@/components/LoadingDots';
+
 
 export default function BookResults() {
   const [books, setBooks] = useState<BookItem[]>([]);
@@ -40,7 +42,9 @@ export default function BookResults() {
     <div>
       <BookSearchForm onSearch={searchBooks} />
       {loading ? (
-        <p className="mt-4 text-blue-500">Loading...</p>
+        <div className='mt-10'>
+          <LoadingDots />
+        </div>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-4">
           {books.map((book) => (
