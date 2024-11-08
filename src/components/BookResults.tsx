@@ -63,7 +63,7 @@ export default function BookResults() {
                 height={150}
                 className="w-full h-auto object-cover mb-4"
               />
-              <h3 className="truncate overflow-hidden whitespace-nowrap mt-auto">{book.Item.title}</h3>
+              <h3 className="truncate overflow-hidden whitespace-nowrap mt-auto font-sans">{book.Item.title}</h3>
             </div>
           ))}
         </div>

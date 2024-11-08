@@ -9,7 +9,7 @@ function Header() {
 
   return (
     <header className="bg-white shadow-md">
-      <div className="container mx-auto px-4 py-2 flex justify-between items-center">
+      <div className="container mx-auto px-4 py-2 flex justify-between items-center sticky top-0">
         <Link href="/">
           <div className="text-gray-900 font-bold text-xl">
             TechShelf
@@ -17,9 +17,6 @@ function Header() {
         </Link>
         <nav>
           <ul className="flex space-x-4 items-center">
-            <li>
-              <a href="#" className="text-gray-600 hover:text-gray-800">テック</a>
-            </li>
             <li>
               <Link href="/books">ブック</Link>
             </li>
